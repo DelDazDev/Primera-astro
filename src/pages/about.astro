@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 const pageTitle = "Sobre mi";
@@ -47,7 +47,7 @@ const fontWeight = "bold";
     </style>
   </head>
   <body>
-    <Navigation />
+    <Header />
     <h1>Mi sitio Astro</h1>
     <h2>{pageTitle}</h2>
     <h3>... ¡y mi nuevo sitio Astro!</h3>
@@ -90,5 +90,8 @@ const fontWeight = "bold";
       )
     }
     <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
